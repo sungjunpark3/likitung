@@ -1,0 +1,60 @@
+---
+title: 🥁
+number-sections: true
+number-depth: 3
+format: 
+  revealjs:
+    theme: [simple, assets/custom.scss]
+    logo: assets/9B4FA171-F58E-4E6D-BD30-F65410A78D3F.jpeg
+title-slide-attributes:
+  data-background-image: assets/9B4FA171-F58E-4E6D-BD30-F65410A78D3F 2.jpeg
+  data-background-size: cover
+  data-background-opacity: "0.5"
+---
+
+## 기초
+
+![](fig/figure01.png){fig-align=center}
+
+---
+
+### Stick control & Stroke
+
+![](fig/figure02.png){fig-align=center}
+
+---
+
+### Rudiments
+
+![](fig/figure03.png){fig-align=center}
+
+---
+
+### Rhythm
+
+![](fig/figure04.png){fig-align=center}
+
+---
+
+### Groove & Fill
+
+![](fig/figure05.png){fig-align=center}
+
+---
+
+### Song
+
+![](fig/figure06.png){fig-align=center}
+
+## Daily Practice
+
+### 4 to 8 turnaround
+
+::: {.callout-tip appearance="simple"}
+**GOAL: BPM 100**
+:::
+
+![](fig/daypra01.png){fig-align=center}
+
+
+

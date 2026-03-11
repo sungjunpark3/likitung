@@ -1,17 +1,41 @@
 ---
+title: 드럼 중수 비법서
 number-sections: true
 number-depth: 3
 format: 
   revealjs:
     theme: [simple, assets/custom.scss]
-    logo: assets/9B4FA171-F58E-4E6D-BD30-F65410A78D3F.jpeg
+    include-in-header: 
+      - text: |
+          <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥁</text></svg>">
+    logo: assets/logo.jpeg
+    title-block-style: none
 title-slide-attributes:
-  data-background-image: assets/9B4FA171-F58E-4E6D-BD30-F65410A78D3F 2.jpeg
+  data-background-image: assets/titlepage.png
   data-background-size: cover
-  data-background-opacity: "0.5"
+  data-background-opacity: "1.0"
 ---
 
-![](assets/9B4FA171-F58E-4E6D-BD30-F65410A78D3F 2.jpeg){fig-align=center}
+#### 숙제 바로가기
+
+:::: {.columns}
+
+::: {.column}
+* [**2.**](#daypra) **매일 숙제(주 3회 이상)**
+  + [2.1](#daypra01) 싱글 스트로크
+  + [2.2](#daypra02) 4 to 8 좌우 단련
+  + [2.3](#daypra03) 16분음표 국밥 패턴
+  + [2.4](#daypra04) 셋잇단음표 6연음
+:::
+
+::: {.column}
+* [**3.**](#weekpra) **매주 숙제(주 1회)**
+  + [3.1](#weekpra01) 스틱 컨트롤 기초
+:::
+
+::::
+
+---
 
 ## 기초
 
@@ -19,7 +43,7 @@ title-slide-attributes:
 
 ---
 
-### Stick control & Stroke
+#### Stick control & Stroke
 
 * CCM 드럼 = 팔 20 + 손목 50 + 손가락 30
 
@@ -27,7 +51,7 @@ title-slide-attributes:
 
 ---
 
-### Rudiments (PAS 40)
+#### Rudiments (PAS 40)
 
 * 필수만 골라서 연습 [📥 전체 다운로드](files/VicFirth_RudimentsPoster_2016.pdf)
   + **Roll**(1, 2, 7, 8), **Diddle**(16, 24), **Flam**(20, 24), **Drag**(31, 32)
@@ -37,7 +61,7 @@ title-slide-attributes:
 
 ---
 
-### Rhythm
+#### Rhythm
 
 **악보**를 연주하는 것
 
@@ -45,7 +69,7 @@ title-slide-attributes:
 
 ---
 
-### Groove & Fill
+#### Groove & Fill
 
 **음악**을 연주하는 것
 
@@ -53,14 +77,13 @@ title-slide-attributes:
 
 ---
 
-### Song
+#### Song
 
 ![](fig/figure06.png){fig-align=center}
 
 ---
 
 ::: {.callout-important}
-
 ## 드러머가 하는 일
 
 **CCM특: 곡의 주제는 성가(클래식)지만 [**형식은 팝 & 재즈(실용)**]()**
@@ -71,38 +94,38 @@ title-slide-attributes:
 
 ![](fig/figure07.png){fig-align=center}
 
-## 매일 해야하는 숙제 3개
+## 매일 해야하는 숙제 4개 {#daypra}
 
-### 싱글 스트로크
+### 싱글 스트로크 {#daypra01}
 
 ::: {.callout-important appearance="simple"}
-## 최종목표: BPM 175, 16회(32마디) 유지
+## 16회 반복이 1세트, 틀리면 처음부터 다시, 
 
-16회 반복이 1세트, 틀리면 처음부터 다시, 하루 4세트
+하루 4세트, BPM 60 ➡️ 65 ➡️ 70 ➡️ 75
 :::
 
 ![](fig/daypra01.png){fig-align=center}
 
 ---
 
-### 4 to 8 좌우 단련
+### 4 to 8 좌우 단련 {#daypra02}
 
 ::: {.callout-important appearance="simple"}
-## 최종목표: BPM 100, 16회(32마디) 유지
+## 16회 반복이 1세트, 틀리면 처음부터 다시, 
 
-16회 반복이 1세트, 틀리면 처음부터 다시, 하루 4세트
+하루 4세트, BPM 60 ➡️ 60 ➡️ 65 ➡️ 65
 :::
 
 ![](fig/daypra02.png){fig-align=center}
 
 ---
 
-### 16분음표 국밥 패턴
+### 16분음표 국밥 패턴 {#daypra03}
 
 ::: {.callout-important appearance="simple"}
-## 최종목표: 2배속 재생 완주
+## 영상 완주가 1세트, 틀리면 처음부터 다시,
 
-영상 1회 반복이 1세트, 틀리면 처음부터 다시, 하루 1세트
+하루 1세트, 1배속
 :::
 
 ::: {.r-stack}
@@ -111,20 +134,33 @@ title-slide-attributes:
 
 ---
 
-### 셋잇단음표 6연음 박자감 익히기
+### 셋잇단음표 6연음 박자감 익히기 {#daypra04}
 
 ::: {.callout-important appearance="simple"}
-## 최종목표: BPM 100, 16회(32마디) 유지
+## 16회 반복이 1세트, 틀리면 처음부터 다시, 
 
-16회 반복이 1세트, 틀리면 처음부터 다시, 하루 4세트
+하루 4세트, BPM 45 ➡️ 50 ➡️ 55 ➡️ 60
 :::
 
-![](fig/daypra03.png){fig-align=center}
+![](fig/daypra04.png){fig-align=center}
 
 ---
+## 매주 숙제 (주 1회) {#weekpra}
+
+### 스틱 컨트롤 기초 {#weekpra01}
+
+::: {.callout-important appearance="simple"}
+## 각 악절당 20회 반복, 틀리면 처음부터 다시, BPM 80 [📥 악보 크게보기](files/weekpra01.pdf)
+:::
+
+![](fig/weekpra01.jpg){fig-align=center}
 
 ## 리듬 연습
 
-### 국밥
+### 국밥 8비트
 
 ![](fig/rhythm01.png){fig-align=center}
+
+* 원래 드럼악보 이렇게 안쓰고 한줄에 다씀
+* 지금은 보기 편하라고 나눠서 쓴거임
+* 8비트만 칠줄 알아도 CCM 곡 35% 연주 가능

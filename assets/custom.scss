@@ -222,7 +222,10 @@
   margin: 0 !important;
 }
 
-/* Figure 04 같은 일반 문단 내 이미지 처리 */
 .reveal section p img {
   max-height: 40vh !important; 
+}
+
+.reveal .title {
+  display: none;
 }

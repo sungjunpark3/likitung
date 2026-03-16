@@ -4,6 +4,7 @@ project:
 
 website:
   title: 드럼중수 비법서
+  site-url: https://sungjunpark3.github.io/likitung/
   navbar:
     logo: assets/9B4FA171-F58E-4E6D-BD30-F65410A78D3F.jpeg
     left:

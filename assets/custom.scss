@@ -1,0 +1,231 @@
+/*-- scss:rules --*/
+
+@font-face {
+  font-family: "PretendardVariable";
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard/dist/web/variable/woff2/PretendardVariable.woff2")
+      format("woff2"),
+    url("../../../../../../_assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MonoplexKR-Regular";
+  src: url("../../../../../../_assets/fonts/MonoplexKR-Regular.ttf") format("truetype"),
+    url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2")
+      format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --slide-bg: #f8f9fa;
+  --slide-fg: #212529;
+  --slide-border: #868e96;
+  --slide-link: #d0473e;
+  --soft-bg: #e9ecef;
+  --accent: #d0473e;
+}
+
+.reveal {
+  background-color: var(--slide-bg);
+  color: var(--slide-fg);
+  font-family: "PretendardVariable", "Pretendard", "Noto Sans KR", -apple-system, sans-serif;
+}
+
+.reveal .slides section {
+  color: var(--slide-fg);
+  font-weight: 400;
+}
+
+.reveal .quarto-figure figcaption {
+    text-align: center !important;
+  }
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: "PretendardVariable", "Pretendard", "Noto Sans KR", -apple-system, sans-serif;
+  color: var(--slide-fg);
+  font-weight: 600;
+  border-bottom: 2px solid var(--slide-border);
+  padding-bottom: 0.2em;
+}
+
+.reveal h1 {
+  font-size: 1.45em;
+}
+
+.reveal h2 {
+  font-size: 1.25em;
+}
+
+.reveal h3 {
+  font-size: 1.10em;
+}
+
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin-bottom: 0.45em;
+}
+
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin-top: 0.80em;
+}
+
+.reveal p,
+.reveal li,
+.reveal td,
+.reveal th {
+  font-size: 0.9em !important;
+  font-weight: 400 !important;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: 700 !important;
+}
+
+.reveal table {
+  margin-top: 1.00em !important;
+  border-top: 2px solid var(--slide-border);
+  border-bottom: 2px solid var(--slide-border);
+}
+
+.reveal table td,
+.reveal table th {
+  font-size: 0.70em !important;
+}
+
+.reveal table thead th {
+  font-weight: 700 !important;
+  background-color: #b7c0c9;
+  color: #111111;
+}
+
+.reveal table tbody td {
+  background-color: #d5d9de;
+  color: #111111;
+}
+
+/* Title slide: keep theme defaults, only force Pretendard font */
+#title-slide,
+#title-slide * {
+  font-family: "PretendardVariable", "Pretendard", "Noto Sans KR", -apple-system, sans-serif !important;
+}
+
+#title-slide .quarto-title-authors {
+  display: flex !important;
+  justify-content: flex-end !important;
+  width: 100%;
+}
+
+#title-slide .quarto-title-author,
+#title-slide .quarto-title-author-name,
+#title-slide .date {
+  text-align: right !important;
+}
+
+#title-slide .quarto-title-author {
+  margin-left: auto;
+  padding-right: 0 !important;
+}
+
+#title-slide .title,
+#title-slide .subtitle,
+#title-slide .quarto-title-author-name,
+#title-slide .date,
+#title-slide h1,
+#title-slide h2,
+#title-slide h3,
+#title-slide h4,
+#title-slide h5,
+#title-slide h6 {
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#title-slide .title,
+#title-slide h1 {
+  font-size: 1.75em;
+  line-height: 1.15;
+}
+
+#title-slide .quarto-title-author-name {
+  font-size: 0.62em;
+  line-height: 1.2;
+}
+
+#title-slide .date {
+  display: block;
+  margin-left: auto;
+  width: 100%;
+  font-size: 0.58em;
+  line-height: 1.15;
+}
+
+.reveal .header-section-number {
+  color: #d0473e;
+}
+
+.reveal a,
+.reveal a:visited,
+.reveal a:hover,
+.reveal a:focus {
+  color: #d0473e;
+}
+
+.reveal code,
+.reveal pre,
+.reveal pre code {
+  font-family: "MonoplexKR-Regular", "Consolas", "Monaco", monospace;
+}
+
+.reveal :not(pre) > code {
+  color: var(--accent);
+  background-color: var(--soft-bg);
+}
+
+.reveal pre code {
+  color: var(--slide-fg);
+  background-color: var(--soft-bg);
+}
+
+.reveal blockquote {
+  background-color: var(--soft-bg);
+  border-left: 4px solid var(--accent);
+  color: var(--slide-fg);
+  margin: 0.12em 0 !important;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.2em 0.65em;
+}
+
+.reveal blockquote p {
+  margin: 0 !important;
+}
+
+.reveal section p img {
+  max-height: 40vh !important; 
+}
+
+.reveal .title {
+  display: none;
+}

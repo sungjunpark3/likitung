@@ -1,0 +1,46 @@
+project:
+  type: website
+
+website:
+  title: Sungjun Park
+  site-url: https://sungjunpark.com
+  site-path: /
+  navbar:
+    left:
+      - text: Method review
+        href: method.qmd
+      - text: Research
+        href: research.qmd
+      - text: R & Quarto
+        href: rquarto.qmd
+    right:
+      - icon: envelope
+        text: Email
+        href: mailto:mail@sungjunpark.com
+  page-footer: 
+    center: 
+      - text: © 2025 Sungjun Park. All rights reserved.
+
+format:
+  html:
+    theme: 
+      light: [united, css/mystyles_light.scss]
+      dark: [superhero, css/mystyles_dark.scss]
+    linestretch: 1.55
+    toc: true
+    number-sections: true
+    code-line-numbers: true
+    fig-cap-location: top
+    fig-align: left
+    date-format: YYYY-MM-DD
+    meta: 
+      robots: noindex, nofollow
+    grid: 
+      body-width: 650px
+    toc-depth: 4
+    toc-expand: true
+
+mermaid: 
+  theme: neutral
+
+csl: csl/socio-economic-review.csl

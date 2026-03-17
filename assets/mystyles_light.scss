@@ -327,3 +327,13 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&di
   border: 2.0px solid $gray-200 !important;
   object-position: 100% 20%;
 }
+
+/* Callout 블록 사이의 외부 간격을 줄이는 클래스 */
+.tight-stack {
+  margin-top: 0.2rem !important;    /* 위쪽 간격 */
+  margin-bottom: 0.2rem !important; /* 아래쪽 간격 */
+  
+  // 만약 블록 사이의 흰 공백을 아예 없애고 싶다면 0으로 설정하세요.
+  // margin-top: 0 !important;
+  // margin-bottom: 0 !important;
+}

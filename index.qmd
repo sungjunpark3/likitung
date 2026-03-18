@@ -1,16 +1,9 @@
 ---
-title: "🥁 + ⏰ = 😎"
-description: |
-    루미는 왼손잡이임\ 
-    셋트에선 오른손이 자동으로 단련되니까\
-    차라리 셋트에 빨리 앉는게 나을듯\
+title: 드럼 중수 비법서
+description: 잘 익히면 엄청난 속도로 드럼 중수가 될 수 있다고 전해지는 비법서.
+abstract: "🥁 + ⏰ = 😎"
+abstract-title: ""
 ---
-
-
-
-이 문서는 **드럼 중수가 되기 위한 비법서**다.[^1]
-
-[^1]: 이 비법서를 잘 숙지하고 따르면 엄청난 속도로 드럼 중수가 될 수 있다고 전해진다.
 
 ::: {.callout-note collapse="true" .tight-stack}
 ## 1주차 요약 2026-03-01
@@ -46,8 +39,17 @@ description: |
 
 ![](fig/daypra01.png){fig-align=center}
 
-::: {.column-margin}
-이게 Single Stroke Roll 임.
+* 첫번째가 제일 잘된 싱글스트로크. 딱 저정도로 자연스럽게 손가락 열려도 됨.
+* 두번째처럼 손가락 열리면 안됨. 손가락 열어서 하는 스트로크는 따로 있음.
+
+::: {layout-ncol="2"}
+<div>
+<video src="vid/IMG_6469_1.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+</div>
+
+<div>
+<video src="vid/IMG_6469_2.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+</div>
 :::
 
 ### 4 to 8 좌우 단련 {#daypra02}

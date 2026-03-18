@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - vid/
+    - fig/
+    - files/
 
 website:
   title: 내룸내룸

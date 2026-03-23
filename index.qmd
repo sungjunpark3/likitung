@@ -1,6 +1,6 @@
 ---
 title: 드럼 중수 비법서
-description: 잘 익히면 엄청난 속도로 드럼 중수가 될 수 있다고 전해지는 비법서.
+description: 저번에 수업 못했으니까 이번주의 주간숙제는 심플하게 갑시다.
 abstract: "🥁 + ⏰ = 😎"
 abstract-title: ""
 ---
@@ -23,11 +23,13 @@ abstract-title: ""
   + **3️⃣** 평타 RL,
   + **2️⃣** 짤짤이 rl,
   + **1️⃣** 고스트노트 (음표에 괄호친거)
+
+주간 숙제는 [여기](files/weekpra01.pdf)에.
 :::
 
 
 
-## 매일 해야하는 숙제 4개 {#daypra}
+## 매일 해야하는 숙제 4개(주 3회 이상) {#daypra}
 
 ### 싱글 스트로크 {#daypra01}
 
@@ -95,29 +97,28 @@ Single Stroke 4
 ---
 ## 매주 숙제 (주 1회) {#weekpra}
 
-### 스틱 컨트롤 기초 {#weekpra01}
+선택지를 주겠음. [저번주 숙제](files/weekpra01.pdf)를 한번 더하거나, 아니면 아래의 악보를 60으로 16회 연주해보거나. 
 
-::: {.callout-important}
-## 각 악절(번호)당 16회 반복, 틀려도 계속하기, BPM 80
+![](fig/daypra05.png){fig-align=center}
 
-.pdf로 메모하면서 볼거면 [여기](files/weekpra01.pdf) 누르셈. 밑에 이미지 클릭은 커지기만 함.
-:::
-
-* 아마 진짜 지루하고 하품오는 순간 많을 거임. 
-* 근데 이제 효과는 확실한. 꾹참고 해보셈. 
-* 이거 이번주만 하고 안할거임. 
-* 인생 살면서 딱 한번만 하고 넘어가는 연습임! 
-
- thanks me later 😎
-
-![](fig/weekpra01.jpg){fig-align=center}
+:::: {.content-hidden}
 
 ## 리듬 연습
 
-### 국밥 8비트
+### 국밥 8비트 {.collapsible .collapsed}
 
 ![](fig/rhythm01.png){fig-align=center}
 
 * 원래 드럼악보 이렇게 안쓰고 한줄에 다씀
 * 지금은 보기 편하라고 나눠서 쓴거임
 * 8비트만 칠줄 알아도 CCM 곡 35% 연주 가능
+
+::: {.panel-tabset}
+## 섹션 A
+A에 대한 긴 내용...
+
+## 섹션 B
+B에 대한 긴 내용...
+:::
+
+::::

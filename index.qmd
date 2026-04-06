@@ -1,8 +1,6 @@
 ---
 title: 드럼 중수 비법서
-description: 저번에 수업 못했으니까 이번주의 주간숙제는 심플하게 갑시다.
-abstract: "🥁 + ⏰ = 😎"
-abstract-title: ""
+description: "🥁 + ⏰ = 😎"
 ---
 
 ::: {.callout-note collapse="true" .tight-stack}
@@ -13,11 +11,11 @@ abstract-title: ""
 [이전꺼 슬라이드로 된거 보기](assets/likitung.qmd) <- 이제 업뎃 안함. 여기서 쭉 할거임.
 :::
 
-::: {.callout-note collapse="false" .tight-stack}
+::: {.callout-note collapse="true" .tight-stack}
 ## 2주차 요약 2026-03-15
 
 * 팔을 힘없이 내린 상태로 팔꿈치만 굽혀서 편안한 자세 만들기, 
-* 이제부터 **모든 연습은 Down 스트로크로 연주**하기, 
+* 이제부터 **모든 연습은 Full or Down 스트로크로 연주**하기, 
 * 강약조절은 4단계: 
   + **4️⃣** 악센트(음표 위에 >),
   + **3️⃣** 평타 RL,
@@ -27,19 +25,26 @@ abstract-title: ""
 주간 숙제는 [여기](files/weekpra01.pdf)에.
 :::
 
+::: {.callout-note collapse="false" .tight-stack}
+## 3주차 요약 2026-03-29
 
+* 킥 앞꿈치로 밟기, 
+* Down 스트로크는 때리고 나서 높이 5cm 이내로 유지, 
+
+:::
 
 ## 매일 해야하는 숙제 4개(주 3회 이상) {#daypra}
 
 ### 싱글 스트로크 {#daypra01}
 
-::: {.callout-important}
-## 16회 반복이 1세트, 틀리면 처음부터 다시, 목표 = 200
-
-하루 4세트, BPM 60 ➡️ 65 ➡️ 70 ➡️ 75
-:::
+* 16회 반복이 1세트, 틀리면 처음부터 다시, 목표 = 200
+* 하루 4세트, BPM 60 ➡️ 70 ➡️ 80 ➡️ 90
 
 ![](fig/daypra01.png){fig-align=center}
+
+::: {.callout-tip collapse="true"}
+
+## 옳게된 스트로크 보기
 
 * 첫번째가 제일 잘된 싱글스트로크. 딱 저정도로 자연스럽게 손가락 열려도 됨.
 * 두번째처럼 손가락 열리면 안됨. 손가락 열어서 하는 스트로크는 따로 있음.
@@ -54,71 +59,38 @@ abstract-title: ""
 </div>
 :::
 
+:::
+
 ### 4 to 8 좌우 단련 {#daypra02}
 
-::: {.callout-important}
-## 16회 반복이 1세트, 틀리면 처음부터 다시, 목표 = 100
-
-하루 4세트, BPM 60 ➡️ 60 ➡️ 65 ➡️ 65
-:::
+* 16회 반복이 1세트, 틀리면 처음부터 다시, 목표 = 100
+* 하루 4세트, BPM 60 ➡️ 70 ➡️ 75 ➡️ 80
 
 ![](fig/daypra02.png){fig-align=center}
 
 ### 16분음표 국밥 패턴 {#daypra03}
 
-::: {.callout-important}
-## 영상 완주가 1세트, 틀리면 그 레벨 처음부터 다시.
+* 영상 완주가 1세트, 틀리면 그 레벨 처음부터 다시.
+* 하루 1세트, 1배속, 손목에 힘빼고 치기.
+* 이런저런 패턴들의 나열에 익숙해지는 것이 목표
+* 마지막 업뎃: 4월 6일
 
-하루 1세트, 1배속, 손목에 힘빼고 치기.
+{{< video https://www.youtube.com/watch?v=cWe_j4jxdig width=100% height="300" >}}
 
-이런저런 패턴들의 나열에 익숙해지는 것이 목표
-:::
-
-{{< video https://www.youtube.com/watch?v=PGxIQl-AFwA width=100% height="300" >}}
-
-### 셋잇단음표 6연음 박자감 익히기 {#daypra04}
-
-::: {.callout-important}
-## 16회 반복이 1세트, 틀리면 처음부터 다시, 
-
-하루 4세트, BPM 45 ➡️ 50 ➡️ 55 ➡️ 60
-:::
-
-![](fig/daypra04.1.png){fig-align=center}
-
-::: {.column-margin}
-2박, 4박은 6연음말고 이걸로 치셈.
-
-Single Stroke 4
-
-![](fig/daypra04.2.png){width="200"}
-:::
-
----
 ## 매주 숙제 (주 1회) {#weekpra}
 
-선택지를 주겠음. [저번주 숙제](files/weekpra01.pdf)를 한번 더하거나, 아니면 아래의 악보를 60으로 16회 연주해보거나. 
+* 이거 잘모르겠으면 카톡하셈
+* 16회 반복이 1세트, 틀리면 처음부터 다시, 목표 = 150
+* 4세트, BPM 60 ➡️ 70 ➡️ 80 ➡️ 90
 
-![](fig/daypra05.png){fig-align=center}
+![](fig/weekpra02.png){fig-align=center}
 
-:::: {.content-hidden}
+## 듣기 숙제
 
-## 리듬 연습
+* 요즘 젊은이들은 잘 듣지를 않아.
+* [이 악보](files/mymusicfive_298531_[Boaz Jo] Welove - 사랑을 나눠요.pdf)를 **보면서** 음원 쭉 정주행하기(Welove 사랑을 나눠요).
+* 어느 음표가 어느 악기를 연주한 것인지 구별해보자!
+* 어느 기호가 어떤 주법을 표현한 것인지 생각해보자!
 
-### 국밥 8비트 {.collapsible .collapsed}
 
-![](fig/rhythm01.png){fig-align=center}
 
-* 원래 드럼악보 이렇게 안쓰고 한줄에 다씀
-* 지금은 보기 편하라고 나눠서 쓴거임
-* 8비트만 칠줄 알아도 CCM 곡 35% 연주 가능
-
-::: {.panel-tabset}
-## 섹션 A
-A에 대한 긴 내용...
-
-## 섹션 B
-B에 대한 긴 내용...
-:::
-
-::::

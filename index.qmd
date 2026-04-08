@@ -5,6 +5,8 @@ date: 2026-03-01
 date-modified: today
 ---
 
+![](fig/likitung.jpeg){fig-alt="문지은"}
+
 ::: {.callout-note collapse="true" .tight-stack}
 ## 1주차 요약 2026-03-01
 

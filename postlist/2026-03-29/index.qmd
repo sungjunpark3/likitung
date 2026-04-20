@@ -1,0 +1,11 @@
+---
+title: "Week 03: Stick Control 2"
+date: "2026-03-29"
+description: "약간 애매해서 숙제만 바뀐 주임"
+---
+
+## 매주 숙제 (주 1회)
+
+선택지를 주겠음. [지난번 숙제](files/weekpra01.pdf)를 한번 더하거나, 아니면 아래의 악보를 60으로 16회 연주해보거나. 
+
+![](fig/daypra05.png){fig-align=center}

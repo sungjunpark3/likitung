@@ -1,0 +1,11 @@
+---
+title: "Week 01: Intro"
+date: "2026-03-01"
+categories: [intro]
+---
+
+업뎃하기 전 슬라이드로 했던 거. 아래 슬라이드가 잘 안보이면 [이 링크](../../assets/likitung.qmd) 클릭.
+
+방향키로 슬라이드 넘길 수 있음.
+
+<iframe src="../../assets/likitung.html" width="100%" height="500px"></iframe>

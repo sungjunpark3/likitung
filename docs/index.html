@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,7 +73,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -137,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">2026-04-16</p>
+        <p class="date-modified">2026-04-20</p>
       </div>
     </div>
       
@@ -147,21 +207,7 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#매일-해야하는-숙제-4개주-3회-이상" id="toc-매일-해야하는-숙제-4개주-3회-이상" class="nav-link active" data-scroll-target="#매일-해야하는-숙제-4개주-3회-이상"><span class="header-section-number">1</span> 매일 해야하는 숙제 4개(주 3회 이상)</a>
-  <ul>
-  <li><a href="#싱글-스트로크" id="toc-싱글-스트로크" class="nav-link" data-scroll-target="#싱글-스트로크"><span class="header-section-number">1.1</span> 싱글 스트로크</a></li>
-  <li><a href="#to-8-좌우-단련" id="toc-to-8-좌우-단련" class="nav-link" data-scroll-target="#to-8-좌우-단련"><span class="header-section-number">1.2</span> 4 to 8 좌우 단련</a></li>
-  <li><a href="#분음표-국밥-패턴" id="toc-분음표-국밥-패턴" class="nav-link" data-scroll-target="#분음표-국밥-패턴"><span class="header-section-number">1.3</span> 16분음표 국밥 패턴</a></li>
-  </ul></li>
-  <li><a href="#매주-숙제" id="toc-매주-숙제" class="nav-link" data-scroll-target="#매주-숙제"><span class="header-section-number">2</span> 매주 숙제</a></li>
-  <li><a href="#듣기-숙제" id="toc-듣기-숙제" class="nav-link" data-scroll-target="#듣기-숙제"><span class="header-section-number">3</span> 듣기 숙제</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
@@ -170,8 +216,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><a href="fig/likitung.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="fig/likitung.jpeg" class="img-fluid" alt="문지은"></a></p>
-<div class="tight-stack callout callout-style-default callout-note callout-titled">
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><a href="fig/likitung.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="fig/likitung.jpeg" class="img-fluid" alt="안녕하세요 저는 문지은입니다"></a></p>
+<p>그림 드래그 후 빈곳에 복붙 해보셈</p>
+</div></div><div class="tight-stack callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -216,21 +265,42 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="tight-stack callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-3주차 요약 2026-03-29
+3, 4주차 요약 2026-03-29, 2026-04-07
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>킥 앞꿈치로 밟기,</li>
 <li>Down 스트로크는 때리고 나서 높이 5cm 이내로 유지,</li>
 <li>1, 2, 3, 4박 시작할때 오른발 밟기</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="tight-stack callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+5주차 요약 2026-04-18
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li>손가락을 풀고 스트로크해서 스틱이 자연스럽게 튀어오르게,</li>
+<li>Double Stroke 간략히 소개만 함(날먹함)</li>
+<li><strong>BPM 조절꿀팁</strong><br>
+꼭 써놓은대로 하지말고, 간신히 끝까지 해낼 수 있는 속도로 반복해도 됨.</li>
 </ul>
 </div>
 </div>
@@ -249,7 +319,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -258,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>첫번째가 제일 잘된 싱글스트로크. 딱 저정도로 자연스럽게 손가락 열려도 됨.</li>
@@ -267,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
 <div>
 
 </div>
-<div class="quarto-layout-panel" data-fig-align="center" data-layout-ncol="2">
+<div class="quarto-layout-panel" data-layout-ncol="2" data-fig-align="center">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <video src="vid/IMG_6469_1.mp4" autoplay="" loop="" muted="" playsinline="" style="width: 300px; border-radius: 8px;">
@@ -329,65 +399,72 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/cWe_j4jxdig" width="100%" height="300" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 </section>
-<section id="매주-숙제" class="level2 page-columns page-full" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="매주-숙제"><span class="header-section-number">2</span> 매주 숙제</h2>
-<p>이제 본격적으로 <a href="files/VicFirth_RudimentsPoster_2016.pdf">루디먼트</a>를 공부할거임.</p>
-<ul>
-<li>지난주까지 <strong>Single Stroke 4</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>를 했음. 기억나지? RLRL</li>
-<li>이제 <strong>5-Stroke Roll</strong> 을 할거임. 근데 별거 아님.</li>
-</ul>
-<blockquote class="blockquote">
-<p>걍 5번 치는거 아님? 왜 굳이 <a href="https://www.google.com/search?sca_esv=e926bb0053f95734&amp;sxsrf=ANbL-n7KsH5Md8sXnI7RUpPxgXqGOyEBBQ:1776301004564&amp;udm=2&amp;fbs=ADc_l-bD_nyrjATWBKup7flJ4rea5XFXsPHwMjGsTekJ1HCohBAQ3Hh19DqzlO7wr7YUgTdA6AIvvuoLcS3uB5TUiBhAbf2Esh7hmQcamAOq029JiHMVyTbhrjhAYu-Ng82VW8WgGSFua2p2h-ay8dQzMPUF12fpxGg_kjM7behuJY0GIp3QHruE5Ck6GFaTDTWCtxdQUF0awmWcgOotu6jGd7fMOgEHHAUTd10yMw_XTMRmb5tdjn4&amp;q=%EC%8A%A4%EC%8B%9C%EB%A1%A4&amp;sa=X&amp;ved=2ahUKEwj0qpDzlPGTAxW6sVYBHXvbOD4QtKgLegQIFRAB&amp;biw=1432&amp;bih=791&amp;dpr=2">Roll</a>이라고 함?</p>
-</blockquote>
-<p>드럼이라는 타악기의 특성 때문임.</p>
-<p>피아노는 걍 건반 꾹 누르면 손 뗄때까지 소리가 계속 이어짐. 근데 드럼은 안그럼. 드럼소리를 계속 sustain 하기 위해서는 뭔가를 해줘야함. 피아노처럼 딸깍~ 이 아님 ㅋㅋㅋ 갑자기 김민기 생각나네</p>
-<p><strong>뭔가 돌멩이 굴리는 듯한 소리를 넣어보려는 시도가 Roll 인거임.</strong></p>
-<p>그래서 단순히 5번 치는게 아니라 살살 4번 + 세게 1번 치는게 5-Stroke Roll임. 악보로 표현해보면 이럼.</p>
-<p><a href="fig/Five-Stroke-Roll2023Intext.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="fig/Five-Stroke-Roll2023Intext.png" class="img-fluid"></a></p>
-<p>마지막 5번째에 악센트 보이지? <strong>도로로로 딱!</strong> 소리를 내는게 목표임.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
-<p>악보마다 표현하는게 조금씩 다름. <strong>국룰은 아래 왼쪽그림임</strong>. 위에는 이해를 돕기 위한 그림이고, 아래 오른쪽은 6-Stroke-Roll을 위한 떡밥임. 소리는 같음.</p>
-<p><a href="fig/2026-04-16 10.18.13.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="fig/2026-04-16 10.18.13.png" class="img-fluid"></a></p>
+<section id="주차별-기록들" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="주차별-기록들"><span class="header-section-number">2</span> 주차별 기록들</h2>
 
-<div class="no-row-height column-margin column-container"><div class="">
-<p>콩나물에 대각선으로 줄 그어놓은게 Double Stroke로 연주하라는 표시임. 2개 그어져있으면 Double Stroke를 2번 하라는 뜻.</p>
-</div></div><blockquote class="blockquote">
-<p>그럼 4-Stroke Roll은 왜 루디먼트에 없음? <a href="https://namu.wiki/w/%EB%8F%84%EB%A1%9C%EB%A1%9C"><strong>도로로</strong></a> <strong>딱!</strong> 같은거.</p>
-</blockquote>
-<p><strong>양손이 더블 스트로크 하는 시점</strong>부터 Roll이라고 부름.</p>
-<p><strong>도로로 딱!</strong>은 앞의 도로로를 꾸밈음으로 해석하는게 국룰임. 나중에 할거임. 꾸밈음이 1개면 Flam, 2개면 Drag, 3개 이상이면 Ruff라고 함.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<blockquote class="blockquote">
-<p>그래서 숙제가 머임?</p>
-</blockquote>
-<ul>
-<li>이거 BPM 60으로 4회 반복하셈(도돌이표 포함해서)
-<ul>
-<li>1, 2회는 악보대로</li>
-<li>3, 4회는 RL 반대로</li>
-</ul></li>
-<li>단, <strong>딱딱딱딱딱!</strong> 말고 <strong>도로로로 딱!</strong>으로 (rrllR),</li>
-<li>잘 모르겠으면 카톡하셈</li>
-</ul>
-<p><a href="fig/five-stroke-roll-exercise-11.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="fig/five-stroke-roll-exercise-11.png" class="img-fluid"></a></p>
-</section>
-<section id="듣기-숙제" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="듣기-숙제"><span class="header-section-number">3</span> 듣기 숙제</h2>
-<ul>
-<li><a href="files/mymusicfive_298531_[Boaz Jo] Welove - 사랑을 나눠요.pdf">이 악보</a>를 <strong>보면서</strong> 음원 쭉 정주행하기(Welove 사랑을 나눠요).</li>
-</ul>
-<p>만약 가능하다면 킥이랑 오른손만 악보를 따라해보면서 들어보자.</p>
 
 
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p><a href="fig/daypra04.2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="fig/daypra04.2.png" class="img-fluid" width="200"></a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>순서가 반대인 경우도 있음: <strong>딱! 도로로로</strong><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>나중이고 뭐고 사실 이게 다임.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1776265200000" data-listing-file-modified-sort="1776674043259" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="220" data-listing-title-sort="Week 05: 5-Stroke Roll" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2026-04-16</span>
+</td>
+<td>
+<a href="./postlist/2026-04-16/index.html" class="title listing-title">Week 05: 5-Stroke Roll</a>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1775487600000" data-listing-file-modified-sort="1776674123855" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56" data-listing-title-sort="Week 04: Triplet 1" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2026-04-07</span>
+</td>
+<td>
+<a href="./postlist/2026-04-07/index.html" class="title listing-title">Week 04: Triplet 1</a>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1774710000000" data-listing-file-modified-sort="1776673788618" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Week 03: Stick Control 2" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2026-03-29</span>
+</td>
+<td>
+<a href="./postlist/2026-03-29/index.html" class="title listing-title">Week 03: Stick Control 2</a>
+</td>
+</tr>
+<tr data-index="3" data-listing-date-sort="1773500400000" data-listing-file-modified-sort="1776673578221" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74" data-listing-title-sort="Week 02: Stick Control 1" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2026-03-15</span>
+</td>
+<td>
+<a href="./postlist/2026-03-15/index.html" class="title listing-title">Week 02: Stick Control 1</a>
+</td>
+</tr>
+<tr data-index="4" data-categories="aW50cm8=" data-listing-date-sort="1772290800000" data-listing-file-modified-sort="1776673094866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="19" data-listing-title-sort="Week 01: Intro" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2026-03-01</span>
+</td>
+<td>
+<a href="./postlist/2026-03-01/index.html" class="title listing-title">Week 01: Intro</a>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

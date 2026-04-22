@@ -59,12 +59,13 @@ resources:
 * Double Stroke 간략히 소개만 함(날먹함)
 * **BPM 조절꿀팁**\
   꼭 써놓은대로 하지말고, 간신히 끝까지 해낼 수 있는 속도로 반복해도 됨.
+* 왼손 오른손 소리 똑같이 나게 하셈
 
 :::
 
-## 매일 해야하는 숙제 4개(주 3회 이상)
+## Daily Practice (3+ Times a Week)
 
-### 싱글 스트로크
+### Single Stroke
 
 * 16회 반복이 1세트, 틀리면 처음부터 다시, 목표 = 200
 * 하루 3세트, BPM 70 ➡️ 85 ➡️ 105
@@ -90,18 +91,15 @@ resources:
 
 :::
 
-### 4 to 8 좌우 단련
+### 4 to 8 Turnaround
 
 * 16회 반복이 1세트, 틀리면 처음부터 다시, 목표 = 100
 * 하루 3세트, BPM 70 ➡️ 75 ➡️ 80
-
-::: {.column-margin}
-근데 이거 80 됨? 될듯말듯 해서 시키는거임. 이렇게 하다보면 언젠가 뚫림. 오른손도 ㅇㅇ
-:::
+  + 80 빡세면 한 73~75로 놓고 2세트 하셈
 
 ![](fig/daypra02.png){fig-align=center}
 
-### 16분음표 국밥 패턴
+### 16th notes patterns
 
 * 영상 완주가 1세트, 틀리면 그 레벨 처음부터 다시.
 * 마지막 업뎃: 4월 6일
@@ -137,4 +135,6 @@ resources:
 
 {{< video https://www.youtube.com/watch?v=cWe_j4jxdig width=100% height="300" >}}
 
-## 주차별 기록들
+## Weekly Practice
+
+근데 혹시 악보 보는 법도 배우고 싶니

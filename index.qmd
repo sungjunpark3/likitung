@@ -1,5 +1,5 @@
 ---
-title: 드럼 중수 비법서
+title: 내룸 중수 비법서
 description: "🥁 + ⏰ = 😎"
 date: 2026-03-01
 date-modified: today
@@ -52,7 +52,7 @@ resources:
 
 :::
 
-::: {.callout-note collapse="false" .tight-stack}
+::: {.callout-note collapse="true" .tight-stack}
 ## 5주차 요약 2026-04-18
 
 * 손가락을 풀고 스트로크해서 스틱이 자연스럽게 튀어오르게, 
@@ -60,6 +60,16 @@ resources:
 * **BPM 조절꿀팁**\
   꼭 써놓은대로 하지말고, 간신히 끝까지 해낼 수 있는 속도로 반복해도 됨.
 * 왼손 오른손 소리 똑같이 나게 하셈
+
+:::
+
+::: {.callout-note collapse="false" .tight-stack}
+## 6주차 요약 2026-04-30
+
+* **더블 스트로크**\
+  메트로놈 없이 걍 왼손 튕기면서 유튜브 보기 (10분 이상).
+* **오른발 킥연습**\
+  R L R K 균일하게!
 
 :::
 

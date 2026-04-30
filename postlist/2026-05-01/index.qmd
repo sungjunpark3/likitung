@@ -1,0 +1,12 @@
+---
+title: "실험실"
+date: "2026-05-01"
+description: "뭐좀 실험해보는 중"
+---
+
+<iframe 
+  src="https://strudel.cc/?code=c291bmQoImNhc2lvIik%3D&embed" 
+  width="100%" 
+  height="300" 
+  style="border:none;">
+</iframe>
